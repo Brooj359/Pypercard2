@@ -9,7 +9,6 @@ from pypercard import App, Card
 
 
 
-
 # Create the app while ensuring the counter is reset.
 carousel_app = App(
     name="PyperCard carousel", datastore={"counter": 0},
@@ -37,11 +36,53 @@ def go_to_4(app, card):
 def go_to_5(app, card):
     return "card5"
 
+@carousel_app.transition("card4", "click", "go_to_6")
+def go_to_6(app, card):
+    return "card6"
+
+@carousel_app.transition("card4", "click", "go_to_7")
+def go_to_7(app, card):
+    return "card7"
+
+@carousel_app.transition("card5", "click", "go_to_8")
+def go_to_8(app, card):
+    return "card8"
+
+@carousel_app.transition("card5", "click", "go_to_9")
+def go_to_9(app, card):
+    return "card9"
+
+@carousel_app.transition("card6", "click", "go_to_11")
+def go_to_11(app, card):
+    return "card11"
+
+@carousel_app.transition("card6", "click", "go_to_12")
+def go_to_12(app, card):
+    return "card12"
+
+@carousel_app.transition("card6", "click", "go_to_13")
+def go_to_13(app, card):
+    return "card13"
+
+
+
 
 
 
 
 @carousel_app.transition("card2", "click", "again")
+def again(app, card):
+    return "card1"
+
+@carousel_app.transition("card11", "click", "again")
+def again(app, card):
+    return "card1"
+
+@carousel_app.transition("card12", "click", "again")
+def again(app, card):
+    return "card1"
+
+@carousel_app.transition("card13", "click", "again")
 def again(app, card):
     return "card1"
 
