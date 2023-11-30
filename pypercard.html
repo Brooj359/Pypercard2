@@ -9,52 +9,97 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.13.0.min.css" />
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css" />
 </head>
 <body>
     <py-config src="./pyscript.toml"></py-config>
     <py-script src="./main.py"></py-script>
     <main>
         <header>
-            <h1 class="title">Pyscript Playground: PyperCard Adventure</h1>
-            <p class="subtitle is3">A testing grounds for <code>pyscript</code> experiments.</p>
+            <h1 class="title">PyperCard Adventure</h1>
         </header>
         <section>
             <article>
                 <template id="card1">
                     <div class="p-card">
-                        <h2>Interactive Hello</h2>
+                        <h2><b>Start Your Adventure As A Hero!</b></h2>
                         <div class="p-card__content">
-                            <label for="name">Enter your name: </label>
-                            <input id="name" type="text" autofocus/>
-                            <button id="submit">Hello</button>
+                            <p>This is you!</p>
+                                <figure>
+                                    <img src="./images/sleeping_knight.jpg" alt="knight_sleeping">
+                                </figure>
+                            <p><cite>"Sleeping Knight" from Tumblr posted by user 'baconfather' 7 years ago</cite></p>
+                            <p>
+                                Your life is <em><b>sad</b></em>, very <em><b>sad</b></em>. Up until now you haven't had much of a chance 
+                                to fix it. Once when you were a kid you dreamed of becoming a knight, saving people, but now you have become 
+                                depressed and are going through a mid-life crisis. But thankfully, fate has bestowed you with another opprutunity 
+                                to change your life, the opprutunity to go on an <em><b>Adventure!</b></em> 
+                            </p>
                             <br>
-                            <br>
-                            <br>
-                            <button id="go_to_3" autofocus>Card 3</button>
+                            <p>Do you decide to go on this journey?</p>
+                            <button id="go_to_3" autofocus>Go on the Journey!</button>
+                            <button id="end_journey" autofocus>Stay Home</button>
                         </div>
                     </div>
                 </template>
                 <template id="card2">
                     <div class="p-card">
-                        <h2>Hello {name}!</h2>
+                        <h2></h2>
                         <div class="p-card__content">
+                            <p>You stayed at home and didn't decide to venture. Afterwards, you lived a fulfilling life and got married, had kids, got a job... No you didn't.
+                                You died that night of alcohol poisoning. No one found your body either because no one comes to visit you, <em><b>ever</b></em>. 
+                            </p>
+                            <figure>
+                                <img src="./images/dead_body1.png" alt="dead_body">
+                            </figure>
+                            <p><cite>"Dead body" from OPENCLIPART posted by user 'Firkin' 2018</cite></p>
                             <button id="again" autofocus>Again</button>
-                            <button id="go_to_1" autofocus>Card 1</button>
-                            <button id="go_to_3" autofocus>Card 3</button>
                         </div>
                     </div>
                 </template>
                 <template id="card3">
                     <div class="p-card">
-                        <h2>The final card</h2>
+                        <h2>You begin your adventure!</h2>
                         <div class="p-card__content">
-                            <p>That's it! This card has been displayed {counter} time[s].</p>
-                            <p>It will automatically transition back to the first after 5
-                            seconds.</p>
-                            <button id="go_to_2" autofocus>Card 2</button>
-                            <button id="go_to_1" autofocus>Card 1</button>
+                            <p>You have packed up and are finally on the road, and can finally leave your old, sad, worthless, horrible life behind you now,
+                            and can finally make use of the life you are unworthy of bearing. Anyways, the trail splits into two pathways. The one on the right 
+                            you can hear coyotes howling, and on the left you can hear a bear. With the weapons you have currently, you have a decent chance of 
+                            winning a fight against the bear, but you could have a garunteed chance of winning against the nearby coyotes if there is a small number
+                            of them. Problem is, you have no idea how many there are. <em><b>Which path shall you choose?</b></em>
+                            </p>
+                            <img src="./images/two_paths.jpg" alt="two_paths">
+                            <br>
+                            <button id="go_to_4" autofocus>Left Path</button>
+                            <button id="go_to_4" autofocus>Right Path</button>
                         </div>
                     </div>
+                </template>
+                <template id="card4">
+                    <div class="p-card">
+                        <h2><em>Good News!</em></h2>
+                        <div class="p-card__content">
+                            <p>I was just joking, bad news. The trail merges ahead and now you must face both the lion and the coyotes. Judging from the looks of it,
+                                this might be the biggest brown bear, <em>ever</em>, and the biggest pack of coyotes, <em>ever</em>. Thankfully they are fighting each other...
+                                Nope, they spotted you and are now ganging up on you. This is quite unfortunate. <em>Fortunatley</em>, you brought plenty of weapons!
+                                You brought a bow, broadsword, nunchucks, and a bomb. If you choose the bomb, you could also suffer major damage. Which do you choose?
+                            </p>
+                            <button id="go_to_5" autofocus>Bow</button>
+                            <button id="go_to_5" autofocus>Broadsword</button>
+                            <button id="go_to_6" autofocus>Nunchucks</button>
+                            <button id="go_to_7" autofocus>Bomb</button>
+                        </div>
+                    </div>
+                    <template id="card5">
+                        <div class="p-card">
+                            <h2><em>Bad News!!!</em></h2>
+                            <div class="p-card__content">
+                                <p>Just kidding, good news! Through your valiant efforts and smart attack strategies, you were able to defeat both the coyotes and the bear! You're
+                                    life might actually be worth something!(might) You can now continue your quest, except for one thing, you hear a lot of noise coming from your right,
+                                    it sounds like a city.
+                                </p>
+                                <button id="again" autofocus>Again</button>
+                            </div>
+                        </div>
                 </template>
             </article>
         </section>

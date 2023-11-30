@@ -16,39 +16,30 @@ carousel_app = App(
 )
 
 
-@carousel_app.transition("card2", "click", "reset")
-def reset(app, card):
-    return "card1"
+# This is what is used as ex:
+# @carousel_app.transition("card2", "click", "reset")
+# def reset(app, card):
+#     return "card1"
 
-@carousel_app.transition("card1", "click", "go_to_2")
-def go_to_2(app, card):
+@carousel_app.transition("card1", "click", "end_journey")
+def end_journey(app, card):
     return "card2"
 
 @carousel_app.transition("card1", "click", "go_to_3")
 def go_to_3(app, card):
     return "card3"
 
+@carousel_app.transition("card3", "click", "go_to_4")
+def go_to_4(app, card):
+    return "card4"
 
-@carousel_app.transition("card2", "click", "go_to_1")
-def go_to_1(app, card):
-    return "card1"
+@carousel_app.transition("card4", "click", "go_to_5")
+def go_to_5(app, card):
+    return "card5"
 
-@carousel_app.transition("card2", "click", "go_to_3")
-def go_to_3(app, card):
-    return "card3"
 
-@carousel_app.transition("card3", "click", "go_to_1")
-def go_to_1(app, card):
-    return "card1"
 
-@carousel_app.transition("card3", "click", "go_to_2")
-def go_to_3(app, card):
-    return "card2"
 
-@carousel_app.transition("card1", "click", "submit")
-def hello(app, card):
-    app.datastore["name"] = card.get_by_id("name").value
-    return "card2"
 
 @carousel_app.transition("card2", "click", "again")
 def again(app, card):
