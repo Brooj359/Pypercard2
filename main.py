@@ -10,6 +10,7 @@ from pypercard import App, Card
 
 
 # Create the app while ensuring the counter is reset.
+
 carousel_app = App(
     name="PyperCard carousel", datastore={"counter": 0},
 )
@@ -63,6 +64,39 @@ def go_to_12(app, card):
 @carousel_app.transition("card6", "click", "go_to_13")
 def go_to_13(app, card):
     return "card13"
+
+@carousel_app.transition("card9", "click", "go_to_8")
+def go_to_8(app, card):
+    return "card8"
+
+@carousel_app.transition("card8", "click", "go_to_10")
+def go_to_10(app, card):
+    return "card10"
+
+@carousel_app.transition("card10", "click", "go_to_14")
+def go_to_14(app, card):
+    return "card14"
+
+@carousel_app.transition("card10", "click", "go_to_15")
+def go_to_15(app, card):
+    return "card15"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
