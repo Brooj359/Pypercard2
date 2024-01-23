@@ -9,7 +9,7 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.13.0.min.css" />
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <py-config src="./pyscript.toml"></py-config>
@@ -38,13 +38,13 @@
                             <br>
                             <p>Do you decide to go on this journey?</p>
                             <button id="go_to_3" autofocus>Go on the Journey!</button>
-                            <button id="end_journey" autofocus>Stay Home</button>
+                            <button id="go_to_2" autofocus>Stay Home</button>
                         </div>
                     </div>
                 </template>
                 <template id="card2">
                     <div class="p-card">
-                        <h2></h2>
+                        <h2>You Stayed Home</h2>
                         <div class="p-card__content">
                             <p>You stayed at home and didn't decide to venture. Afterwards, you lived a fulfilling life and got married, had kids, got a job... No you didn't.
                                 You died that night of alcohol poisoning. No one found your body either because no one comes to visit you, <em><b>ever</b></em>. 
@@ -95,8 +95,8 @@
                             <h2><em>Bad News!!!</em></h2>
                             <div class="p-card__content">
                                 <p>Just kidding, good news! Through your valiant efforts and smart attack strategies, you were able to defeat both the coyotes and the bear! You're
-                                    life might actually be worth something!(might) You can now continue your quest, except for one thing, you hear a lot of noise coming from your right,
-                                    it sounds like a city.
+                                    life might actually be worth something!(might) Now that you have defeated the animals, you notice another path you can take. There seems to be an 
+                                    old pathway going into the forest that is attatched to the main trail. 
                                 </p>
                                 <br>
                                 <p>Do you choose to venture through the forest or continue on your path?</p>
@@ -219,10 +219,7 @@
                         <div class="p-card">
                             <h2><em></em></h2>
                             <div class="p-card__content">
-                                <p>But not before the witch teleports in fronts of you and knocks you over. She gets on top of you and puts you in an arm lock, breaking your
-                                    arm, then flipping you over for a leg lock, breaking your leg. Finally, she suplexes you and gets you in a chokehold.
-                                    As she chokes you out, you can see her gold wrestling medals being displayed on a shelf. You can hear the witch cackle
-                                    as your vision blurs, and turns to black<em>You died!</em>
+                                <p>
                                 </p>
                                 <br>
                                 <button id="again" autofocus>Again</button>
@@ -267,7 +264,7 @@
                                 <br>
                                 <button id="go_to_18" autofocus>Left</button>
                                 <button id="go_to_19" autofocus>Forward</button>
-                                <button id="go_to_20" autofocus>Right</button>
+                                <button id="go_to_21" autofocus>Right</button>
                             </div>
                         </div>
                     </template>
@@ -325,9 +322,9 @@
                                     Normally you'd run, but it seems the treasure behind the giant has intrigued you. How will you get the treasure?
                                 </p>
                                 <br>
-                                <button id="again" autofocus>Get the Giant's Attention</button>
-                                <button id="again" autofocus>Sneak Around the Giant</button>
-                                <button id="again" autofocus>Try and Defeat the Giant</button>
+                                <button id="go_to_22" autofocus>Get the Giant's Attention</button>
+                                <button id="go_to_23" autofocus>Sneak Around the Giant</button>
+                                <button id="go_to_24" autofocus>Try and Defeat the Giant</button>
                             </div>
                         </div>
                     </template>
@@ -411,7 +408,7 @@
                     </template>
                     <template id="card27">
                         <div class="p-card">
-                            <h2><em>Left</em></h2>
+                            <h2><em>Left is Right?</em></h2>
                             <div class="p-card__content">
                                 <p>
                                     You continue down the path on the left trail, thinking about what could have happened if you let the stranger approach. You don't let it bother you 
@@ -435,7 +432,7 @@
                                 </p>
                                 <br>
                                 <button id="go_to_29" autofocus>Left</button>
-                                <button id="go_to_" autofocus>Right</button>
+                                <button id="go_to_34" autofocus>Right</button>
                             </div>
                         </div>
                     </template>
@@ -477,7 +474,7 @@
                                     a forest. <em>You died!</em>
                                 </p>
                                 <br>
-                                <button id="Again" autofocus>Again</button>
+                                <button id="again" autofocus>Again</button>
                             </div>
                         </div>
                     </template>
@@ -492,7 +489,7 @@
                                     starve the next couple days. <em> You died!</em>
                                 </p>
                                 <br>
-                                <button id="Again" autofocus>Again</button>
+                                <button id="again" autofocus>Again</button>
                             </div>
                         </div>
                     </template>
@@ -549,7 +546,7 @@
                                     way to die. <em>You Died!</em>
                                 </p>
                                 <br>
-                                <button id="Again" autofocus>Again</button>
+                                <button id="again" autofocus>Again</button>
                             </div>
                         </div>
                     </template>
@@ -576,11 +573,11 @@
                                     it bites your hand off. You start screaming, trying to run away but the wolf pounces on you and kills you. <em>You died!</em>
                                 </p>
                                 <br>
-                                <button id="Again" autofocus>Again</button>
+                                <button id="again" autofocus>Again</button>
                             </div>
                         </div>
                     </template>
-                    <template id="card38">
+                    <template id="card39">
                         <div class="p-card">
                             <h2><em>Animal Abuser</em></h2>
                             <div class="p-card__content">
@@ -591,11 +588,11 @@
                                     but the wolf jumps on your back and knocks you over on a big rock that hits your head. You pass out.
                                 </p>
                                 <br>
-                                <button id="go_to_39" autofocus>Next</button>
+                                <button id="go_to_40" autofocus>Next</button>
                             </div>
                         </div>
                     </template>
-                    <template id="card39">
+                    <template id="card40">
                         <div class="p-card">
                             <h2><em>Friend?... or Food?</em></h2>
                             <div class="p-card__content">
@@ -607,7 +604,7 @@
                                     are. You're out of food too. Where on earth are you gonna get any food? Unless... <em>You Win?</em>
                                 </p>
                                 <br>
-                                <button id="Again" autofocus>Again</button>
+                                <button id="again" autofocus>Again</button>
                             </div>
                         </div>
                     </template>
